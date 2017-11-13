@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" href="./image/icon.png">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <title>Continuous Integration and Delivery - CircleCI</title>
+    <script src="./js/html5shiv.js"></script>
+    <script src="./js/respond.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header text-center">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="glyphicon glyphicon-remove"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="./image/logo.svg" alt="Brand" class='logo'>
+            </a>
+            <a href="#" class='login hidden-lg'>Log In</a>
+
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class='OverDropdown'>
+                    <a href="#">Product</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">Mobile</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Enterprise</a></li>
+                <li class="OverDropdown">
+                    <a href="#">Developers</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Hello World</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </li>
+                <li class="OverDropdown">
+                    <a href="#">Company</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Customers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="OverDropdown">
+                    <a href="#" style='font-weight: 400'>Support</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Get Support</a></li>
+                        <li><a href="#">Community Forum</a></li>
+                        <li><a href="#">Premium Support</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class='login' style='font-weight: 400'>Log In</a></li>
+                <li><button class="btn btn-green" type="submit">Sign Up</button></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+        <div class="navbar-fix-collapse text-center" id="bs-example-navbar-collapse-1" style='height: 0px'>
+            <button class="btn btn-green" type="submit">Sign Up for Free</button>
+            <ul class="nav text-left">
+                <li class='clickDropdown'>
+                    <a href="#">Features</a>
+                    <span class='glyphicon glyphicon-chevron-left'></span>
+                    <ul class="clickDropdown-menu">
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">Mobile</a></li>
+                    </ul>
+                </li>
+                <li class=''><a href="#">Pricing</a></li>
+                <li class=''><a href="#">Enterprise</a></li>
+                <li class="clickDropdown">
+                    <a href="#">Developers</a>
+                    <span class='glyphicon glyphicon-chevron-left'></span>
+                    <ul class="clickDropdown-menu">
+                        <li><a href="#">Hello World</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Integrations</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </li>
+                <li class="clickDropdown">
+                    <a href="#">Company</a>
+                    <span class='glyphicon glyphicon-chevron-left'></span>
+                    <ul class="clickDropdown-menu">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Customers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </li>
+                <li class="clickDropdown">
+                    <a href="#">Support</a>
+                    <span class='glyphicon glyphicon-chevron-left'></span>
+                    <ul class="clickDropdown-menu">
+                        <li><a href="#">Get Support</a></li>
+                        <li><a href="#">Community Forum</a></li>
+                        <li><a href="#">Premium Support</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div><!-- /.container-fluid -->
+</nav>
+
+<main>
+<div class="banner container-fluid">
+    <div class="row">
+        <div class="banner-text col-md-8">
+            <h2>Forrester Names CircleCI Leader</h2>
+            <p>See why CircleCI debuts as a Leader in CI.</p>
+        </div>
+        <div class="banner-btn col-md-4">
+            <button type='button' class='btn-transparent'>
+                Download Report
+            </button>
+        </div>
+        <span class='icon-close'></span>
+    </div>
+</div>
+
+<div class="content">
+    <div class="container">
+        <h1>Build Faster. <br class='visible-xs visible-sm visible-md'>Test More.<br>Fail Less.</h1>
+        <div class='row'>
+            <div class="col-sm-2 col-sm-offset-5">
+                <hr>
+            </div>
+        </div>
+        <p>Automate the software development process using continuous integration and continuous delivery so you can focus on what matters—building great things—not waiting for great things to build.</p>
+        <div class="row">
+            <button type='button' class='btn-green'>Start Building for Free</button>
+            <button type='button' class='btn-transparent'>Explore the Docs</button>
+        </div>
+    </div>
+</div>
+
+<div class="logoBox">
+    <div class="container">
+        <div class="row text-center">
+            <div class='col-md-2 col-xs-12'>
+                <img src="./image/logo-facebook.svg" >
+            </div>
+            <div class='col-md-2 col-xs-12'>
+                <img src="./image/logo-segment.svg" >
+            </div>
+            <div class='col-md-2 col-xs-12'>
+                <img src="./image/logo-kickstarter.svg" >
+            </div>
+            <div class='col-md-2 col-xs-12'>
+                <img src="./image/logo-percolate.svg" >
+            </div>
+            <div class='col-md-2 col-xs-12'>
+                <img src="./image/logo-spotify.svg" >
+            </div>
+            <div class='col-md-2 col-xs-12'>
+                <img src="./image/logo-gopro.svg" >
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contentDetails">
+    <div class="container">
+        <div class="row">
+                <div class="leftImg col-sm-6">
+                    <img src="./image/leftImg.png" alt="">
+                </div>
+                <div class="rightContent col-sm-6">
+                    <h2>Start-Up Innovation, Enterprise Scale</h2>
+                    <p>Running CI/CD behind your firewall has never been easier. Increase developer productivity, deliver quality code, and reduce operational overhead, all while offering the security you need at scale.</p>
+                    <button class='btn-blue' type='button'>Learn More</button>
+                </div>
+        </div>
+    </div>
+</div>
+
+<div class="contentIntroduce">
+    <div class="container">
+        <div class="row">
+            <div class="leftBox col-md-4 col-xs-12 text-center">
+                <div class="imgRoundBox">
+                    <img src="./image/fanatics-logo.svg" alt="">
+                </div>
+                <p>
+                    <strong>Johnny Sheeley</strong>
+                    <br>
+                    Senior Engineering Manager at
+                    Fanatics
+                </p>
+            </div>
+            <div class="rightBox col-md-8 col-xs-12">
+                <p>
+                    “CircleCI tripled our team’s efficiency. With CircleCI, people can try different languages, work on someone else’s code, set as many builds as you need for yourself, and so much more. CircleCI makes our team way happier about what they are building.”
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contentLink">
+    <div class="container">
+        <div class="row text-center">
+            <h2>Powering Your Favorites</h2>
+            <p>From e-Commerce, travel, and social media, to consumer brands and business services, we support the development of the most utilized mobile apps around the globe.</p>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-3"><img src="./image/link-gopro.svg" alt=""></div>
+            <div class="col-md-3"><img src="./image/link-docker.svg" alt=""></div>
+            <div class="col-md-3"><img src="./image/link-heroku.svg" alt=""></div>
+            <div class="col-md-3"><img src="./image/link-sony.png" alt=""></div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-3"><img src="./image/link-dollar.svg" alt=""></div>
+            <div class="col-md-3"><img src="./image/link-instacart.svg" alt=""></div>
+            <div class="col-md-3"><img src="./image/link-blue-apron.png" alt=""></div>
+            <div class="col-md-3"><img src="./image/link-coinbase.svg" alt=""></div>
+        </div>
+    </div>
+</div>
+
+<div class="contentRegister">
+    <div class="container">
+        <div class="row">
+            <div class="leftBox col-md-9">
+                  <div class="row">
+                      <h2>Ship Quality Code, Faster.</h2>
+                  </div>
+                <div class="row">
+                    <hr class='col-sm-1'>
+                </div>
+                <div class="row">
+                    <p>Better software deserves better tools.</p>
+                </div>
+            </div>
+            <div class="rightBox col-md-3">
+                <button type='button' class='btn-green'> Sign Up for Free</button>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="box_01 col-md-5 col-xs-12">
+                <p>Over 100,000 companies and developers trust CircleCI.</p>
+                <p>CircleCI’s continuous integration and delivery platform helps software teams rapidly release code with confidence by automating the build, test, and deploy process. CircleCI offers a modern software development platform that lets teams ramp up quickly, scale easily, and build confidently every day.</p>
+                <div class='iconBox'>
+                    <span class='glyphicon glyphicon-signal'></span>
+                    <span class='glyphicon glyphicon-cloud'></span>
+                    <span class='glyphicon glyphicon-film'></span>
+                    <span class='glyphicon glyphicon-home'></span>
+                    <span class='glyphicon glyphicon-list-alt'></span>
+                    <a href="#" class='pull-right'>WE'RE HIRING!</a>
+                </div>
+            </div>
+            <div class="box_02 col-md-2 col-xs-12 col-md-offset-1">
+                <h6>CIRCLECI</h6>
+                <ul>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">TEAM</a></li>
+                    <li><a href="#">NEWSROOM</a></li>
+                    <li><a href="#">JOBS</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">PARTNERS</a></li>
+                </ul>
+            </div>
+            <div class="box_03 col-md-2 col-xs-12">
+                <h6>PRODUCT</h6>
+                <ul>
+                    <li><a href="#">FEATURES</a></li>
+                    <li><a href="#">MOBILE</a></li>
+                    <li><a href="#">ENTERPRISE</a></li>
+                    <li><a href="#">PRICING</a></li>
+                    <li><a href="#">CUSTOMERS</a></li>
+                    <li><a href="#">CHANGELOG</a></li>
+                </ul>
+            </div>
+            <div class="box_04 col-md-2 col-xs-12">
+                <h6>SUPPORT</h6>
+                <ul>
+                    <li><a href="#">DOCUMENTATION</a></li>
+                    <li><a href="#">GET SUPPORT</a></li>
+                    <li><a href="#">COMMUNITY</a></li>
+                    <li><a href="#">PREMIUM SUPPORT</a></li>
+                    <li><a href="#">SECURITY</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                    <li><a href="#">TERMS OF SERVICE</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row bottom">
+            <div class="col-md-5 col-xs-12">
+                <span>Copyright © 2017 CircleCI</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>
